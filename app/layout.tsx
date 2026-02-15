@@ -3,7 +3,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/lib/language-context";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {

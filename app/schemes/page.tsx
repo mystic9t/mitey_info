@@ -13,7 +13,10 @@ const translations = {
     subtitle: "Browse through all available central and state government schemes. Click on any scheme to learn more about eligibility and application process.",
     searchPlaceholder: "Search schemes...",
     allCategories: "All Categories",
-    allStates: "All States",
+    allStates: "All India + All States",
+    stateFilterHint: "Filter by state government schemes",
+    centralSchemes: "Central Schemes",
+    stateSchemes: "State Schemes",
     noResults: "No schemes found matching your criteria.",
     clearFilters: "Clear Filters",
     viewDetails: "View Details",
@@ -27,8 +30,11 @@ const translations = {
     title: "सभी सरकारी योजनाएं",
     subtitle: "उपलब्ध सभी केंद्र और राज्य सरकारी योजनाओं को ब्राउज़ करें। पात्रता और आवेदन प्रक्रिया के बारे में जानने के लिए किसी भी योजना पर क्लिक करें।",
     searchPlaceholder: "योजनाएं खोजें...",
+    allStates: "सभी भारत + सभी राज्य",
+    stateFilterHint: "राज्य सरकार की योजनाओं के अनुसार फ़िल्टर करें",
+    centralSchemes: "केंद्रीय योजनाएं",
+    stateSchemes: "राज्य योजनाएं",
     allCategories: "सभी श्रेणियां",
-    allStates: "सभी राज्य",
     noResults: "आपके मानदंड से मेल खाती कोई योजना नहीं मिली।",
     clearFilters: "फ़िल्टर साफ़ करें",
     viewDetails: "विवरण देखें",
@@ -50,9 +56,10 @@ const categoryInfo: Record<string, { nameEn: string; nameHi: string; color: stri
 };
 
 const states = [
-  "All India", "Andhra Pradesh", "Bihar", "Delhi", "Gujarat", "Haryana",
-  "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Punjab",
-  "Rajasthan", "Tamil Nadu", "Telangana", "Uttar Pradesh", "West Bengal"
+  { value: "", labelEn: "All India + All States", labelHi: "सभी भारत + सभी राज्य" },
+  { value: "All India", labelEn: "🇮🇳 All India (Central)", labelHi: "🇮🇳 ऑल इंडिया (केंद्रीय)" },
+  { value: "Delhi", labelEn: "Delhi", labelHi: "दिल्ली" },
+  { value: "Uttar Pradesh", labelEn: "Uttar Pradesh", labelHi: "उत्तर प्रदेश" },
 ];
 
 function SchemesContent() {
@@ -72,11 +79,11 @@ function SchemesContent() {
         return false;
       }
 
-      if (selectedState && selectedState !== "All India") {
-        const schemeStates = scheme.states;
-        if (!schemeStates.includes("All India") && !schemeStates.includes(selectedState)) {
-          return false;
+      if (selectedState) {
+        if (selectedState === "All India") {
+          return scheme.level === "central" || scheme.states.includes("All India");
         }
+        return scheme.level === "state" && scheme.states.includes(selectedState);
       }
 
       if (searchQuery) {
@@ -148,10 +155,12 @@ function SchemesContent() {
             value={selectedState}
             onChange={(e) => setSelectedState(e.target.value)}
             className="select-field"
+            title={t.stateFilterHint}
           >
-            <option value="">{t.allStates}</option>
             {states.map((state) => (
-              <option key={state} value={state}>{state}</option>
+              <option key={state.value} value={state.value}>
+                {language === "en" ? state.labelEn : state.labelHi}
+              </option>
             ))}
           </select>
         </div>
@@ -186,8 +195,10 @@ function SchemesContent() {
                   <span className={`badge-category ${info?.color || 'bg-gray-100 text-gray-700'}`}>
                     {language === "en" ? info?.nameEn : info?.nameHi}
                   </span>
-                  {scheme.states.includes("All India") && (
+                  {scheme.level === "central" ? (
                     <span className="text-xs text-muted-foreground">🇮🇳 All India</span>
+                  ) : (
+                    <span className="text-xs text-muted-foreground">🏛️ {scheme.states[0]}</span>
                   )}
                 </div>
                 

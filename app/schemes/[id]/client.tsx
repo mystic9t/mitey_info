@@ -106,9 +106,13 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
           <span className={`badge-category ${info.color}`}>
             {language === "en" ? info.nameEn : info.nameHi}
           </span>
-          {scheme.states.includes("All India") && (
+          {scheme.level === "central" ? (
             <span className="badge-category bg-blue-50 text-blue-700 border border-blue-200">
               🇮🇳 All India
+            </span>
+          ) : (
+            <span className="badge-category bg-amber-50 text-amber-700 border border-amber-200">
+              🏛️ {scheme.states[0]}
             </span>
           )}
         </div>
