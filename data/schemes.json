@@ -1,0 +1,714 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "PM Kisan Samman Nidhi",
+    "name_hi": "पीएम किसान सम्मान निधि",
+    "category": "agriculture",
+    "category_hi": "कृषि",
+    "benefit": "₹6,000 per year in three installments",
+    "benefit_hi": "₹6,000 प्रति वर्ष तीन किश्तों में",
+    "description": "Direct income support of ₹6,000 per year to farmer families across the country.",
+    "description_hi": "देश भर में किसान परिवारों को ₹6,000 प्रति वर्ष की सीधी आय सहायता।",
+    "eligibility": {
+      "occupation": ["farmer"],
+      "landholding_max": 2,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "Small and marginal farmers with less than 2 hectares of land",
+    "eligibility_text_hi": "2 हेक्टेयर से कम भूमि वाले छोटे और सीमांत किसान",
+    "documents": ["Aadhaar Card", "Land Records", "Bank Account", "Passport Size Photo"],
+    "documents_hi": ["आधार कार्ड", "भूमि अभिलेख", "बैंक खाता", "पासपोर्ट साइज फोटो"],
+    "application_steps": [
+      "Visit pmkisan.gov.in",
+      "Click 'New Farmer Registration'",
+      "Enter Aadhaar number and verify OTP",
+      "Fill personal and land details",
+      "Submit and note registration number"
+    ],
+    "application_steps_hi": [
+      "pmkisan.gov.in पर जाएं",
+      "'New Farmer Registration' पर क्लिक करें",
+      "आधार नंबर दर्ज करें और OTP सत्यापित करें",
+      "व्यक्तिगत और भूमि विवरण भरें",
+      "सबमिट करें और पंजीकरण नंबर नोट करें"
+    ],
+    "official_link": "https://pmkisan.gov.in",
+    "helpline": "011-23381092",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-fasal-bima",
+    "name": "PM Fasal Bima Yojana",
+    "name_hi": "पीएम फसल बीमा योजना",
+    "category": "agriculture",
+    "category_hi": "कृषि",
+    "benefit": "Crop insurance against natural calamities",
+    "benefit_hi": "प्राकृतिक आपदाओं के खिलाफ फसल बीमा",
+    "description": "Crop insurance scheme to protect farmers against losses due to natural calamities, pests & diseases.",
+    "description_hi": "किसानों को प्राकृतिक आपदाओं, कीटों और रोगों के कारण होने वाले नुकसान से बचाने के लिए फसल बीमा योजना।",
+    "eligibility": {
+      "occupation": ["farmer"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "All farmers including sharecroppers and tenant farmers",
+    "eligibility_text_hi": "बटाईदारों और किरायेदार किसानों सहित सभी किसान",
+    "documents": ["Aadhaar Card", "Land Records", "Bank Account", "Sowing Certificate"],
+    "documents_hi": ["आधार कार्ड", "भूमि अभिलेख", "बैंक खाता", "बोवाई प्रमाण पत्र"],
+    "application_steps": [
+      "Contact your bank or insurance agent",
+      "Fill the proposal form",
+      "Submit required documents",
+      "Pay premium amount",
+      "Get insurance policy document"
+    ],
+    "application_steps_hi": [
+      "अपने बैंक या बीमा एजेंट से संपर्क करें",
+      "प्रस्ताव फॉर्म भरें",
+      "आवश्यक दस्तावेज जमा करें",
+      "प्रीमियम राशि का भुगतान करें",
+      "बीमा पॉलिसी दस्तावेज प्राप्त करें"
+    ],
+    "official_link": "https://pmfby.gov.in",
+    "helpline": "1800-180-1551",
+    "states": ["All India"],
+    "deadline": "Seasonal (Before sowing)"
+  },
+  {
+    "id": "ayushman-bharat",
+    "name": "Ayushman Bharat - PMJAY",
+    "name_hi": "आयुष्मान भारत - पीएमजेएवाई",
+    "category": "health",
+    "category_hi": "स्वास्थ्य",
+    "benefit": "Health cover up to ₹5 lakh per family per year",
+    "benefit_hi": "प्रति परिवार प्रति वर्ष ₹5 लाख तक का स्वास्थ्य कवर",
+    "description": "World's largest health insurance scheme providing coverage for secondary and tertiary hospitalization.",
+    "description_hi": "द्वितीयक और तृतीयक अस्पताल में भर्ती के लिए कवरेज प्रदान करने वाली विश्व की सबसे बड़ी स्वास्थ्य बीमा योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": 250000,
+      "age_min": null,
+      "gender": null
+    },
+    "eligibility_text": "Poor and vulnerable families based on SECC data",
+    "eligibility_text_hi": "SECC डेटा के आधार पर गरीब और कमजोर परिवार",
+    "documents": ["Aadhaar Card", "Ration Card", "Income Certificate"],
+    "documents_hi": ["आधार कार्ड", "राशन कार्ड", "आय प्रमाण पत्र"],
+    "application_steps": [
+      "Visit nearest PMJAY kiosk or hospital",
+      "Verify your eligibility using Aadhaar",
+      "Get your e-card printed",
+      "Use e-card at empaneled hospitals for cashless treatment"
+    ],
+    "application_steps_hi": [
+      "निकटतम PMJAY कियोस्क या अस्पताल जाएं",
+      "आधार का उपयोग करके अपनी पात्रता सत्यापित करें",
+      "अपना ई-कार्ड प्रिंट करवाएं",
+      "कैशलेस इलाज के लिए सूचीबद्ध अस्पतालों में ई-कार्ड का उपयोग करें"
+    ],
+    "official_link": "https://pmjay.gov.in",
+    "helpline": "1800-111-565",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-jeevan-jyoti",
+    "name": "PM Jeevan Jyoti Bima Yojana",
+    "name_hi": "पीएम जीवन ज्योति बीमा योजना",
+    "category": "financial",
+    "category_hi": "वित्तीय",
+    "benefit": "Life insurance cover of ₹2 lakh",
+    "benefit_hi": "₹2 लाख का जीवन बीमा कवर",
+    "description": "Government-backed life insurance scheme with low premium for financial security of families.",
+    "description_hi": "परिवारों की वित्तीय सुरक्षा के लिए कम प्रीमियम वाली सरकार समर्थित जीवन बीमा योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "Age 18-50 years with savings bank account",
+    "eligibility_text_hi": "18-50 वर्ष की आयु वाले बचत बैंक खाताधारक",
+    "documents": ["Aadhaar Card", "Bank Account", "Passport Size Photo"],
+    "documents_hi": ["आधार कार्ड", "बैंक खाता", "पासपोर्ट साइज फोटो"],
+    "application_steps": [
+      "Visit your bank branch",
+      "Fill the enrollment form",
+      "Submit required documents",
+      "Give auto-debit consent for premium",
+      "Receive confirmation SMS"
+    ],
+    "application_steps_hi": [
+      "अपनी बैंक शाखा में जाएं",
+      "पंजीकरण फॉर्म भरें",
+      "आवश्यक दस्तावेज जमा करें",
+      "प्रीमियम के लिए ऑटो-डेबिट की सहमति दें",
+      "पुष्टिकरण SMS प्राप्त करें"
+    ],
+    "official_link": "https://www.jansuraksha.gov.in",
+    "helpline": "1800-180-1111",
+    "states": ["All India"],
+    "deadline": "Ongoing (Enroll by May 31 for current year)"
+  },
+  {
+    "id": "pm-suraksha-bima",
+    "name": "PM Suraksha Bima Yojana",
+    "name_hi": "पीएम सुरक्षा बीमा योजना",
+    "category": "financial",
+    "category_hi": "वित्तीय",
+    "benefit": "Accidental death/disability cover of ₹2 lakh",
+    "benefit_hi": "दुर्घटना मृत्यु/विकलांगता कवर ₹2 लाख",
+    "description": "Accidental insurance scheme with affordable premium for all bank account holders.",
+    "description_hi": "सभी बैंक खाताधारकों के लिए किफायती प्रीमियम वाली दुर्घटना बीमा योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "Age 18-70 years with savings bank account",
+    "eligibility_text_hi": "18-70 वर्ष की आयु वाले बचत बैंक खाताधारक",
+    "documents": ["Aadhaar Card", "Bank Account", "Passport Size Photo"],
+    "documents_hi": ["आधार कार्ड", "बैंक खाता", "पासपोर्ट साइज फोटो"],
+    "application_steps": [
+      "Visit your bank branch",
+      "Fill the enrollment form",
+      "Submit required documents",
+      "Give auto-debit consent for premium",
+      "Receive confirmation SMS"
+    ],
+    "application_steps_hi": [
+      "अपनी बैंक शाखा में जाएं",
+      "पंजीकरण फॉर्म भरें",
+      "आवश्यक दस्तावेज जमा करें",
+      "प्रीमियम के लिए ऑटो-डेबिट की सहमति दें",
+      "पुष्टिकरण SMS प्राप्त करें"
+    ],
+    "official_link": "https://www.jansuraksha.gov.in",
+    "helpline": "1800-180-1111",
+    "states": ["All India"],
+    "deadline": "Ongoing (Enroll by May 31 for current year)"
+  },
+  {
+    "id": "pm-awas-yojana",
+    "name": "PM Awas Yojana - Urban",
+    "name_hi": "पीएम आवास योजना - शहरी",
+    "category": "housing",
+    "category_hi": "आवास",
+    "benefit": "Interest subsidy up to ₹2.67 lakh on home loan",
+    "benefit_hi": "गृह ऋण पर ₹2.67 लाख तक की ब्याज सब्सिडी",
+    "description": "Housing scheme for urban poor with interest subsidy on home loans for constructing or purchasing a house.",
+    "description_hi": "घर निर्माण या खरीद के लिए गृह ऋण पर ब्याज सब्सिडी के साथ शहरी गरीबों के लिए आवास योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": 1800000,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "Urban poor with income up to ₹18 lakh per year",
+    "eligibility_text_hi": "₹18 लाख प्रति वर्ष आय वाले शहरी गरीब",
+    "documents": ["Aadhaar Card", "Income Certificate", "Bank Statements", "Property Documents"],
+    "documents_hi": ["आधार कार्ड", "आय प्रमाण पत्र", "बैंक स्टेटमेंट", "संपत्ति दस्तावेज"],
+    "application_steps": [
+      "Visit pmaymis.gov.in",
+      "Check eligibility and apply online",
+      "Submit required documents at nearest CSC",
+      "Get your application number",
+      "Track application status online"
+    ],
+    "application_steps_hi": [
+      "pmaymis.gov.in पर जाएं",
+      "पात्रता जांचें और ऑनलाइन आवेदन करें",
+      "निकटतम CSC पर आवश्यक दस्तावेज जमा करें",
+      "अपना आवेदन नंबर प्राप्त करें",
+      "आवेदन की स्थिति ऑनलाइन ट्रैक करें"
+    ],
+    "official_link": "https://pmaymis.gov.in",
+    "helpline": "1800-11-3388",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-awas-rural",
+    "name": "PM Awas Yojana - Gramin",
+    "name_hi": "पीएम आवास योजना - ग्रामीण",
+    "category": "housing",
+    "category_hi": "आवास",
+    "benefit": "Financial assistance of ₹1.20-1.30 lakh for house construction",
+    "benefit_hi": "घर निर्माण के लिए ₹1.20-1.30 लाख की वित्तीय सहायता",
+    "description": "Housing scheme for rural poor to construct pucca houses with basic amenities.",
+    "description_hi": "बुनियादी सुविधाओं के साथ पक्का घर निर्माण के लिए ग्रामीण गरीबों की आवास योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "Rural poor without pucca house, based on SECC data",
+    "eligibility_text_hi": "SECC डेटा के आधार पर पक्का घर रहित ग्रामीण गरीब",
+    "documents": ["Aadhaar Card", "Ration Card", "Bank Passbook", "Land Documents"],
+    "documents_hi": ["आधार कार्ड", "राशन कार्ड", "बैंक पासबुक", "भूमि दस्तावेज"],
+    "application_steps": [
+      "Contact Gram Panchayat or Block office",
+      "Submit application with documents",
+      "Verification by officials",
+      "Get sanctioned and receive first installment",
+      "Construct house in phases with inspection"
+    ],
+    "application_steps_hi": [
+      "ग्राम पंचायत या ब्लॉक कार्यालय से संपर्क करें",
+      "दस्तावेजों के साथ आवेदन जमा करें",
+      "अधिकारियों द्वारा सत्यापन",
+      "स्वीकृति प्राप्त करें और पहली किश्त प्राप्त करें",
+      "निरीक्षण के साथ चरणों में घर का निर्माण करें"
+    ],
+    "official_link": "https://pmayg.nic.in",
+    "helpline": "1800-11-3388",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "beti-bachao-beti-padhao",
+    "name": "Beti Bachao Beti Padhao",
+    "name_hi": "बेटी बचाओ बेटी पढ़ाओ",
+    "category": "women",
+    "category_hi": "महिला एवं बाल विकास",
+    "benefit": "Education support and welfare schemes for girl child",
+    "benefit_hi": "बालिका के लिए शिक्षा सहायता और कल्याणकारी योजनाएं",
+    "description": "Campaign to generate awareness and improve welfare services intended for girls in India.",
+    "description_hi": "भारत में बालिकाओं के लिए जागरूकता बढ़ाने और कल्याण सेवाओं में सुधार के लिए अभियान।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": "female"
+    },
+    "eligibility_text": "Girl children from birth to education age",
+    "eligibility_text_hi": "जन्म से शिक्षा आयु तक की बालिकाएं",
+    "documents": ["Birth Certificate", "Aadhaar Card of parents", "School Certificate"],
+    "documents_hi": ["जन्म प्रमाण पत्र", "माता-पिता का आधार कार्ड", "विद्यालय प्रमाण पत्र"],
+    "application_steps": [
+      "Contact nearest Anganwadi center",
+      "Register the girl child",
+      "Submit required documents",
+      "Enroll in associated welfare schemes",
+      "Track benefits through the scheme"
+    ],
+    "application_steps_hi": [
+      "निकटतम आंगनवाड़ी केंद्र से संपर्क करें",
+      "बालिका को पंजीकृत करें",
+      "आवश्यक दस्तावेज जमा करें",
+      "संबंधित कल्याणकारी योजनाओं में नामांकन करें",
+      "योजना के माध्यम से लाभों को ट्रैक करें"
+    ],
+    "official_link": "https://wcd.gov.in/bbbp-scheme",
+    "helpline": "1091",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "sukanya-samriddhi",
+    "name": "Sukanya Samriddhi Yojana",
+    "name_hi": "सुकन्या समृद्धि योजना",
+    "category": "women",
+    "category_hi": "महिला एवं बाल विकास",
+    "benefit": "High interest savings scheme for girl child's education and marriage",
+    "benefit_hi": "बालिका की शिक्षा और विवाह के लिए उच्च ब्याज बचत योजना",
+    "description": "Small deposit scheme for girl child with attractive interest rate and tax benefits.",
+    "description_hi": "आकर्षक ब्याज दर और कर लाभ के साथ बालिका के लिए लघु जमा योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": "female"
+    },
+    "eligibility_text": "Girl child below 10 years of age",
+    "eligibility_text_hi": "10 वर्ष से कम आयु की बालिका",
+    "documents": ["Birth Certificate", "Aadhaar Card of parents", "Passport Size Photo"],
+    "documents_hi": ["जन्म प्रमाण पत्र", "माता-पिता का आधार कार्ड", "पासपोर्ट साइज फोटो"],
+    "application_steps": [
+      "Visit post office or authorized bank",
+      "Fill account opening form",
+      "Submit birth certificate and parent's ID",
+      "Make initial deposit (minimum ₹250)",
+      "Receive passbook"
+    ],
+    "application_steps_hi": [
+      "डाकघर या अधिकृत बैंक में जाएं",
+      "खाता खोलने का फॉर्म भरें",
+      "जन्म प्रमाण पत्र और माता-पिता का आईडी जमा करें",
+      "प्रारंभिक जमा करें (न्यूनतम ₹250)",
+      "पासबुक प्राप्त करें"
+    ],
+    "official_link": "https://www.india.gov.in/sukanya-samriddhi-yojna",
+    "helpline": "1800-266-6686",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-mudra-yojana",
+    "name": "PM Mudra Yojana",
+    "name_hi": "पीएम मुद्रा योजना",
+    "category": "financial",
+    "category_hi": "वित्तीय",
+    "benefit": "Loans up to ₹10 lakh for micro enterprises",
+    "benefit_hi": "सूक्ष्म उद्यमों के लिए ₹10 लाख तक के ऋण",
+    "description": "Micro finance scheme to fund non-corporate small business sector enterprises.",
+    "description_hi": "गैर-कॉर्पोरेट लघु व्यापार क्षेत्र के उद्यमों को वित्त पोषित करने के लिए सूक्ष्म वित्त योजना।",
+    "eligibility": {
+      "occupation": ["self-employed"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "Non-corporate small business owners, artisans, shopkeepers",
+    "eligibility_text_hi": "गैर-कॉर्पोरेट लघु व्यवसायी, कारीगर, दुकानदार",
+    "documents": ["Aadhaar Card", "Business Proof", "Bank Statements", "Passport Size Photo"],
+    "documents_hi": ["आधार कार्ड", "व्यवसाय प्रमाण", "बैंक स्टेटमेंट", "पासपोर्ट साइज फोटो"],
+    "application_steps": [
+      "Visit nearest bank branch or NBFC",
+      "Fill Mudra loan application form",
+      "Submit required documents",
+      "Get loan sanctioned",
+      "Start your business with the funds"
+    ],
+    "application_steps_hi": [
+      "निकटतम बैंक शाखा या NBFC में जाएं",
+      "मुद्रा ऋण आवेदन पत्र भरें",
+      "आवश्यक दस्तावेज जमा करें",
+      "ऋण स्वीकृत करवाएं",
+      "निधि के साथ अपना व्यवसाय शुरू करें"
+    ],
+    "official_link": "https://mudra.org.in",
+    "helpline": "1800-180-1111",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-scholarship",
+    "name": "PM Scholarship Scheme",
+    "name_hi": "पीएम छात्रवृत्ति योजना",
+    "category": "education",
+    "category_hi": "शिक्षा",
+    "benefit": "Scholarship up to ₹3,000 per month for professional courses",
+    "benefit_hi": "व्यावसायिक पाठ्यक्रमों के लिए प्रति माह ₹3,000 तक की छात्रवृत्ति",
+    "description": "Scholarship scheme for dependent wards and widows of ex-servicemen for professional courses.",
+    "description_hi": "भूतपूर्व सैनिकों के आश्रित पुत्र/पुत्री एवं विधवाओं के लिए व्यावसायिक पाठ्यक्रमों हेतु छात्रवृत्ति योजना।",
+    "eligibility": {
+      "occupation": ["student"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": null
+    },
+    "eligibility_text": "Wards/widows of ex-servicemen pursuing professional courses",
+    "eligibility_text_hi": "व्यावसायिक पाठ्यक्रम कर रहे भूतपूर्व सैनिकों के आश्रित/विधवाएं",
+    "documents": ["Ex-Servicemen Certificate", "Admission Proof", "Marksheets", "Bank Passbook"],
+    "documents_hi": ["भूतपूर्व सैनिक प्रमाण पत्र", "प्रवेश प्रमाण", "अंकसूची", "बैंक पासबुक"],
+    "application_steps": [
+      "Register on National Scholarship Portal",
+      "Fill the scholarship application form",
+      "Upload required documents",
+      "Submit and get application ID",
+      "Track application status online"
+    ],
+    "application_steps_hi": [
+      "राष्ट्रीय छात्रवृत्ति पोर्टल पर पंजीकरण करें",
+      "छात्रवृत्ति आवेदन पत्र भरें",
+      "आवश्यक दस्तावेज अपलोड करें",
+      "सबमिट करें और आवेदन आईडी प्राप्त करें",
+      "आवेदन की स्थिति ऑनलाइन ट्रैक करें"
+    ],
+    "official_link": "https://scholarships.gov.in",
+    "helpline": "011-26174571",
+    "states": ["All India"],
+    "deadline": "Yearly (Apply by December)"
+  },
+  {
+    "id": "post-matric-scholarship",
+    "name": "Post Matric Scholarship - SC/ST",
+    "name_hi": "पोस्ट मैट्रिक छात्रवृत्ति - SC/ST",
+    "category": "education",
+    "category_hi": "शिक्षा",
+    "benefit": "Financial assistance for post-matric studies",
+    "benefit_hi": "मैट्रिकोत्तर अध्ययन के लिए वित्तीय सहायता",
+    "description": "Scholarship scheme for students from SC/ST categories pursuing post-matriculation studies.",
+    "description_hi": "मैट्रिकोत्तर अध्ययन कर रहे SC/ST श्रेणी के छात्रों के लिए छात्रवृत्ति योजना।",
+    "eligibility": {
+      "occupation": ["student"],
+      "landholding_max": null,
+      "income_max": 250000,
+      "age_min": null,
+      "gender": null
+    },
+    "eligibility_text": "SC/ST students with family income up to ₹2.5 lakh",
+    "eligibility_text_hi": "₹2.5 लाख तक की पारिवारिक आय वाले SC/ST छात्र",
+    "documents": ["Caste Certificate", "Income Certificate", "Previous Marksheets", "Admission Proof"],
+    "documents_hi": ["जाति प्रमाण पत्र", "आय प्रमाण पत्र", "पिछली अंकसूची", "प्रवेश प्रमाण"],
+    "application_steps": [
+      "Visit National Scholarship Portal",
+      "Register and create account",
+      "Fill scholarship application",
+      "Upload documents and submit",
+      "Track status through portal"
+    ],
+    "application_steps_hi": [
+      "राष्ट्रीय छात्रवृत्ति पोर्टल पर जाएं",
+      "पंजीकरण करें और खाता बनाएं",
+      "छात्रवृत्ति आवेदन भरें",
+      "दस्तावेज अपलोड करें और सबमिट करें",
+      "पोर्टल के माध्यम से स्थिति ट्रैक करें"
+    ],
+    "official_link": "https://scholarships.gov.in",
+    "helpline": "011-26174571",
+    "states": ["All India"],
+    "deadline": "Yearly (Apply by December)"
+  },
+  {
+    "id": "pm-matr Vandana",
+    "name": "PM Matru Vandana Yojana",
+    "name_hi": "पीएम मातृ वंदना योजना",
+    "category": "women",
+    "category_hi": "महिला एवं बाल विकास",
+    "benefit": "Cash benefit of ₹5,000 for pregnant women",
+    "benefit_hi": "गर्भवती महिलाओं के लिए ₹5,000 का नकद लाभ",
+    "description": "Maternity benefit scheme for pregnant and lactating mothers for first living child.",
+    "description_hi": "पहले जीवित बच्चे के लिए गर्भवती और स्तनपान कराने वाली माताओं के लिए मातृत्व लाभ योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 19,
+      "gender": "female"
+    },
+    "eligibility_text": "Pregnant women aged 19+ for first living child",
+    "eligibility_text_hi": "पहले जीवित बच्चे के लिए 19+ वर्ष की गर्भवती महिलाएं",
+    "documents": ["Aadhaar Card", "Pregnancy Proof", "Bank Passbook", "Husband's Aadhaar"],
+    "documents_hi": ["आधार कार्ड", "गर्भावस्था प्रमाण", "बैंक पासबुक", "पति का आधार"],
+    "application_steps": [
+      "Register at nearest Anganwadi center",
+      "Submit pregnancy proof and documents",
+      "Get registration number",
+      "Receive installments at various stages",
+      "Track payments through portal"
+    ],
+    "application_steps_hi": [
+      "निकटतम आंगनवाड़ी केंद्र पर पंजीकरण करें",
+      "गर्भावस्था प्रमाण और दस्तावेज जमा करें",
+      "पंजीकरण नंबर प्राप्त करें",
+      "विभिन्न चरणों में किश्तें प्राप्त करें",
+      "पोर्टल के माध्यम से भुगतान ट्रैक करें"
+    ],
+    "official_link": "https://pmmvy.nic.in",
+    "helpline": "1800-11-5500",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-ujjwala-yojana",
+    "name": "PM Ujjwala Yojana 2.0",
+    "name_hi": "पीएम उज्ज्वला योजना 2.0",
+    "category": "women",
+    "category_hi": "महिला एवं बाल विकास",
+    "benefit": "Free LPG connection with first refill and stove",
+    "benefit_hi": "पहली रिफिल और स्टोव के साथ मुफ्त एलपीजी कनेक्शन",
+    "description": "Scheme to provide LPG connections to women from poor households to reduce health hazards from cooking fuels.",
+    "description_hi": "खाना पकाने के ईंधन से होने वाले स्वास्थ्य खतरों को कम करने के लिए गरीब परिवारों की महिलाओं को एलपीजी कनेक्शन देने की योजना।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": "female"
+    },
+    "eligibility_text": "Adult women from poor households without LPG connection",
+    "eligibility_text_hi": "एलपीजी कनेक्शन रहित गरीब परिवारों की वयस्क महिलाएं",
+    "documents": ["Aadhaar Card", "BPL/Income Certificate", "Passport Photo", "Bank Passbook"],
+    "documents_hi": ["आधार कार्ड", "बीपीएल/आय प्रमाण पत्र", "पासपोर्ट फोटो", "बैंक पासबुक"],
+    "application_steps": [
+      "Visit nearest LPG distributor",
+      "Fill application form with documents",
+      "Pay security deposit (if applicable)",
+      "Get connection with first refill",
+      "Book refills through SMS/app"
+    ],
+    "application_steps_hi": [
+      "निकटतम एलपीजी वितरक के पास जाएं",
+      "दस्तावेजों के साथ आवेदन पत्र भरें",
+      "सुरक्षा जमा दें (यदि लागू हो)",
+      "पहली रिफिल के साथ कनेक्शन प्राप्त करें",
+      "SMS/ऐप के माध्यम से रिफिल बुक करें"
+    ],
+    "official_link": "https://www.pmuy.gov.in",
+    "helpline": "1800-266-6696",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-vaya-vandana",
+    "name": "PM Vaya Vandana Yojana",
+    "name_hi": "पीएम वय वंदना योजना",
+    "category": "financial",
+    "category_hi": "वित्तीय",
+    "benefit": "Guaranteed pension at 7.4% interest for 10 years",
+    "benefit_hi": "10 वर्ष के लिए 7.4% ब्याज पर गारंटीकृत पेंशन",
+    "description": "Pension scheme for senior citizens aged 60 years and above with guaranteed return.",
+    "description_hi": "60 वर्ष और उससे अधिक आयु के वरिष्ठ नागरिकों के लिए गारंटीकृत रिटर्न वाली पेंशन योजना।",
+    "eligibility": {
+      "occupation": ["retired"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 60,
+      "gender": null
+    },
+    "eligibility_text": "Senior citizens aged 60 years and above",
+    "eligibility_text_hi": "60 वर्ष और उससे अधिक आयु के वरिष्ठ नागरिक",
+    "documents": ["Aadhaar Card", "Age Proof", "Bank Passbook", "Passport Photo"],
+    "documents_hi": ["आधार कार्ड", "आयु प्रमाण", "बैंक पासबुक", "पासपोर्ट फोटो"],
+    "application_steps": [
+      "Visit nearest LIC branch",
+      "Fill the application form",
+      "Submit age proof and documents",
+      "Pay lump sum amount",
+      "Receive pension monthly"
+    ],
+    "application_steps_hi": [
+      "निकटतम LIC शाखा में जाएं",
+      "आवेदन पत्र भरें",
+      "आयु प्रमाण और दस्तावेज जमा करें",
+      "एकमुश्त राशि का भुगतान करें",
+      "मासिक पेंशन प्राप्त करें"
+    ],
+    "official_link": "https://www.licindia.in",
+    "helpline": "1800-22-9090",
+    "states": ["All India"],
+    "deadline": "Ongoing (Scheme closes March 2026)"
+  },
+  {
+    "id": "pm-shram-yogi-maan-dhan",
+    "name": "PM Shram Yogi Maan Dhan",
+    "name_hi": "पीएम श्रम योगी मान-धन",
+    "category": "financial",
+    "category_hi": "वित्तीय",
+    "benefit": "Monthly pension of ₹3,000 after 60 years",
+    "benefit_hi": "60 वर्ष के बाद ₹3,000 की मासिक पेंशन",
+    "description": "Pension scheme for unorganized sector workers with guaranteed monthly pension.",
+    "description_hi": "गारंटीकृत मासिक पेंशन के साथ असंगठित क्षेत्र के श्रमिकों के लिए पेंशन योजना।",
+    "eligibility": {
+      "occupation": ["worker"],
+      "landholding_max": null,
+      "income_max": 150000,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "Unorganized workers aged 18-40 with income up to ₹1.5 lakh",
+    "eligibility_text_hi": "₹1.5 लाख तक की आय वाले 18-40 वर्ष के असंगठित श्रमिक",
+    "documents": ["Aadhaar Card", "Income Certificate", "Bank Passbook", "Mobile Number"],
+    "documents_hi": ["आधार कार्ड", "आय प्रमाण पत्र", "बैंक पासबुक", "मोबाइल नंबर"],
+    "application_steps": [
+      "Visit nearest CSC center",
+      "Register with Aadhaar and bank details",
+      "Give auto-debit consent",
+      "Start contributing monthly",
+      "Track your account online"
+    ],
+    "application_steps_hi": [
+      "निकटतम CSC केंद्र पर जाएं",
+      "आधार और बैंक विवरण के साथ पंजीकरण करें",
+      "ऑटो-डेबिट की सहमति दें",
+      "मासिक योगदान शुरू करें",
+      "अपना खाता ऑनलाइन ट्रैक करें"
+    ],
+    "official_link": "https://maandhan.in",
+    "helpline": "1800-11-5501",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "national-food-security",
+    "name": "National Food Security Act",
+    "name_hi": "राष्ट्रीय खाद्य सुरक्षा अधिनियम",
+    "category": "health",
+    "category_hi": "स्वास्थ्य",
+    "benefit": "5kg food grains per person per month at subsidized rates",
+    "benefit_hi": "प्रति व्यक्ति प्रति माह 5kg खाद्यान्न सब्सिडी दर पर",
+    "description": "Food security program providing subsidized food grains to eligible households.",
+    "description_hi": "पात्र परिवारों को सब्सिडी वाले खाद्यान्न प्रदान करने वाला खाद्य सुरक्षा कार्यक्रम।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": null
+    },
+    "eligibility_text": "Households identified through SECC survey",
+    "eligibility_text_hi": "SECC सर्वेक्षण के माध्यम से पहचाने गए परिवार",
+    "documents": ["Aadhaar Card", "Ration Card", "Address Proof"],
+    "documents_hi": ["आधार कार्ड", "राशन कार्ड", "पता प्रमाण"],
+    "application_steps": [
+      "Visit your nearest ration card office",
+      "Apply for ration card if not having one",
+      "Link Aadhaar with ration card",
+      "Get grains from FPS at subsidized rates"
+    ],
+    "application_steps_hi": [
+      "अपने निकटतम राशन कार्ड कार्यालय में जाएं",
+      "यदि राशन कार्ड नहीं है तो आवेदन करें",
+      "आधार को राशन कार्ड से लिंक करें",
+      "सब्सिडी दर पर FPS से अनाज प्राप्त करें"
+    ],
+    "official_link": "https://nfsa.gov.in",
+    "helpline": "1800-180-2081",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  },
+  {
+    "id": "pm-poshan",
+    "name": "PM POSHAN (Mid-Day Meal)",
+    "name_hi": "पीएम पोषण (मध्याह्न भोजन)",
+    "category": "education",
+    "category_hi": "शिक्षा",
+    "benefit": "Free nutritious meal for school children",
+    "benefit_hi": "स्कूली बच्चों के लिए मुफ्त पौष्टिक भोजन",
+    "description": "School meal program providing nutritious food to children in government schools.",
+    "description_hi": "सरकारी स्कूलों में बच्चों को पौष्टिक भोजन प्रदान करने वाला स्कूल भोजन कार्यक्रम।",
+    "eligibility": {
+      "occupation": ["student"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 6,
+      "gender": null
+    },
+    "eligibility_text": "Children studying in classes 1-8 in government schools",
+    "eligibility_text_hi": "सरकारी स्कूलों में कक्षा 1-8 में पढ़ने वाले बच्चे",
+    "documents": ["School Enrollment"],
+    "documents_hi": ["स्कूल नामांकन"],
+    "application_steps": [
+      "Enroll child in government school",
+      "Meal is provided automatically",
+      "No separate application needed"
+    ],
+    "application_steps_hi": [
+      "बच्चे को सरकारी स्कूल में नामांकित करें",
+      "भोजन स्वतः प्रदान किया जाता है",
+      "कोई अलग आवेदन नहीं चाहिए"
+    ],
+    "official_link": "https://education.gov.in/mdm",
+    "helpline": "1800-111-000",
+    "states": ["All India"],
+    "deadline": "Ongoing"
+  }
+]
