@@ -71,11 +71,11 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
         
         <div className="relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-            {language === "en" ? "18+ Government Schemes" : "18+ सरकारी योजनाएं"}
+            {schemes.length} {language === "en" ? "Government Schemes" : "सरकारी योजनाएं"}
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">
@@ -152,7 +152,11 @@ export default function Home() {
                   <span className={`badge-category ${info.color}`}>
                     {language === "en" ? info.nameEn : info.nameHi}
                   </span>
-                  <div className="text-2xl">{info.icon}</div>
+                  {scheme.level === "central" ? (
+                    <span className="text-xs text-muted-foreground">🇮🇳 All India</span>
+                  ) : (
+                    <span className="text-xs text-muted-foreground">🏛️ {scheme.states[0]}</span>
+                  )}
                 </div>
                 
                 <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">

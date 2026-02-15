@@ -26,4 +26,9 @@ export interface Scheme {
   helpline: string;
   states: string[];
   deadline: string;
+  level: "central" | "state";
+  status: "active" | "closed" | "expiring_soon" | "information_outdated";
+  portal_last_updated: string;
+  govt_last_updated: string | null;
+  scheme_expiry_date: string | null;
 }

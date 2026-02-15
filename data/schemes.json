@@ -37,7 +37,12 @@
     "official_link": "https://pmkisan.gov.in",
     "helpline": "011-23381092",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-12-15",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-fasal-bima",
@@ -77,7 +82,12 @@
     "official_link": "https://pmfby.gov.in",
     "helpline": "1800-180-1551",
     "states": ["All India"],
-    "deadline": "Seasonal (Before sowing)"
+    "deadline": "Seasonal (Before sowing)",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2026-01-10",
+    "scheme_expiry_date": null
   },
   {
     "id": "ayushman-bharat",
@@ -115,7 +125,12 @@
     "official_link": "https://pmjay.gov.in",
     "helpline": "1800-111-565",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-11-20",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-jeevan-jyoti",
@@ -155,7 +170,12 @@
     "official_link": "https://www.jansuraksha.gov.in",
     "helpline": "1800-180-1111",
     "states": ["All India"],
-    "deadline": "Ongoing (Enroll by May 31 for current year)"
+    "deadline": "Ongoing (Enroll by May 31 for current year)",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-06-01",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-suraksha-bima",
@@ -195,7 +215,12 @@
     "official_link": "https://www.jansuraksha.gov.in",
     "helpline": "1800-180-1111",
     "states": ["All India"],
-    "deadline": "Ongoing (Enroll by May 31 for current year)"
+    "deadline": "Ongoing (Enroll by May 31 for current year)",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-06-01",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-awas-yojana",
@@ -235,7 +260,12 @@
     "official_link": "https://pmaymis.gov.in",
     "helpline": "1800-11-3388",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-09-10",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-awas-rural",
@@ -275,7 +305,12 @@
     "official_link": "https://pmayg.nic.in",
     "helpline": "1800-11-3388",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-08-15",
+    "scheme_expiry_date": null
   },
   {
     "id": "beti-bachao-beti-padhao",
@@ -301,7 +336,7 @@
     "application_steps": [
       "Contact nearest Anganwadi center",
       "Register the girl child",
-      "Submit required documents",
+      "Submit required document",
       "Enroll in associated welfare schemes",
       "Track benefits through the scheme"
     ],
@@ -315,7 +350,12 @@
     "official_link": "https://wcd.gov.in/bbbp-scheme",
     "helpline": "1091",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-07-22",
+    "scheme_expiry_date": null
   },
   {
     "id": "sukanya-samriddhi",
@@ -355,7 +395,12 @@
     "official_link": "https://www.india.gov.in/sukanya-samriddhi-yojna",
     "helpline": "1800-266-6686",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2026-01-01",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-mudra-yojana",
@@ -395,7 +440,12 @@
     "official_link": "https://mudra.org.in",
     "helpline": "1800-180-1111",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-10-05",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-scholarship",
@@ -435,7 +485,12 @@
     "official_link": "https://scholarships.gov.in",
     "helpline": "011-26174571",
     "states": ["All India"],
-    "deadline": "Yearly (Apply by December)"
+    "deadline": "Yearly (Apply by December)",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-12-01",
+    "scheme_expiry_date": null
   },
   {
     "id": "post-matric-scholarship",
@@ -475,10 +530,15 @@
     "official_link": "https://scholarships.gov.in",
     "helpline": "011-26174571",
     "states": ["All India"],
-    "deadline": "Yearly (Apply by December)"
+    "deadline": "Yearly (Apply by December)",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-12-01",
+    "scheme_expiry_date": null
   },
   {
-    "id": "pm-matr Vandana",
+    "id": "pm-matr-vandana",
     "name": "PM Matru Vandana Yojana",
     "name_hi": "पीएम मातृ वंदना योजना",
     "category": "women",
@@ -515,7 +575,12 @@
     "official_link": "https://pmmvy.nic.in",
     "helpline": "1800-11-5500",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-11-15",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-ujjwala-yojana",
@@ -555,7 +620,12 @@
     "official_link": "https://www.pmuy.gov.in",
     "helpline": "1800-266-6696",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-10-20",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-vaya-vandana",
@@ -595,7 +665,12 @@
     "official_link": "https://www.licindia.in",
     "helpline": "1800-22-9090",
     "states": ["All India"],
-    "deadline": "Ongoing (Scheme closes March 2026)"
+    "deadline": "Ongoing (Scheme closes March 2026)",
+    "level": "central",
+    "status": "expiring_soon",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-04-01",
+    "scheme_expiry_date": "2026-03-31"
   },
   {
     "id": "pm-shram-yogi-maan-dhan",
@@ -635,7 +710,12 @@
     "official_link": "https://maandhan.in",
     "helpline": "1800-11-5501",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-09-05",
+    "scheme_expiry_date": null
   },
   {
     "id": "national-food-security",
@@ -673,7 +753,12 @@
     "official_link": "https://nfsa.gov.in",
     "helpline": "1800-180-2081",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-08-01",
+    "scheme_expiry_date": null
   },
   {
     "id": "pm-poshan",
@@ -709,6 +794,453 @@
     "official_link": "https://education.gov.in/mdm",
     "helpline": "1800-111-000",
     "states": ["All India"],
-    "deadline": "Ongoing"
+    "deadline": "Ongoing",
+    "level": "central",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-07-01",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "delhi-ladli-scheme",
+    "name": "Delhi Ladli Scheme",
+    "name_hi": "दिल्ली लाडली योजना",
+    "category": "women",
+    "category_hi": "महिला एवं बाल विकास",
+    "benefit": "Financial assistance up to ₹1 lakh for girl child's education and marriage",
+    "benefit_hi": "बालिका की शिक्षा और विवाह के लिए ₹1 लाख तक की वित्तीय सहायता",
+    "description": "Delhi Government scheme providing financial assistance for empowerment of girl child through education support.",
+    "description_hi": "दिल्ली सरकार की योजना जो शिक्षा सहायता के माध्यम से बालिका सशक्तिकरण के लिए वित्तीय सहायता प्रदान करती है।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": "female"
+    },
+    "eligibility_text": "Girl children born in Delhi, parents must be Delhi residents for at least 3 years",
+    "eligibility_text_hi": "दिल्ली में जन्मी बालिकाएं, माता-पिता कम से कम 3 वर्ष के दिल्ली निवासी होने चाहिए",
+    "documents": ["Birth Certificate", "Parents' ID Proof (Delhi)", "Income Certificate", "Bank Passbook"],
+    "documents_hi": ["जन्म प्रमाण पत्र", "माता-पिता का पहचान पत्र (दिल्ली)", "आय प्रमाण पत्र", "बैंक पासबुक"],
+    "application_steps": [
+      "Visit nearest Women and Child Development Department office",
+      "Fill the Ladli Scheme application form",
+      "Submit required documents",
+      "Get acknowledgment receipt",
+      "Track application status online"
+    ],
+    "application_steps_hi": [
+      "निकटतम महिला एवं बाल विकास विभाग कार्यालय जाएं",
+      "लाडली योजना आवेदन पत्र भरें",
+      "आवश्यक दस्तावेज जमा करें",
+      "पावती रसीद प्राप्त करें",
+      "आवेदन की स्थिति ऑनलाइन ट्रैक करें"
+    ],
+    "official_link": "https://wcd.delhi.gov.in/ladli-scheme",
+    "helpline": "011-23370114",
+    "states": ["Delhi"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-11-10",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "delhi-farishthe",
+    "name": "Delhi Farishte Dilli Ke",
+    "name_hi": "दिल्ली फरिश्ते दिल्ली के",
+    "category": "health",
+    "category_hi": "स्वास्थ्य",
+    "benefit": "Free treatment for accident victims in private hospitals",
+    "benefit_hi": "निजी अस्पतालों में दुर्घटना पीड़ितों का मुफ्त इलाज",
+    "description": "Delhi Government scheme providing free treatment to accident and burn victims in empaneled private hospitals.",
+    "description_hi": "दिल्ली सरकार की योजना जो सूचीबद्ध निजी अस्पतालों में दुर्घटना और जलने के पीड़ितों को मुफ्त इलाज प्रदान करती है।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": null
+    },
+    "eligibility_text": "Any accident or burn victim within Delhi, treatment within 72 hours",
+    "eligibility_text_hi": "दिल्ली के भीतर कोई भी दुर्घटना या जलने का पीड़ित, 72 घंटे के भीतर इलाज",
+    "documents": ["No documents required at time of admission", "Aadhaar Card (for record)"],
+    "documents_hi": ["प्रवेश के समय कोई दस्तावेज आवश्यक नहीं", "आधार कार्ड (रिकॉर्ड के लिए)"],
+    "application_steps": [
+      "Dial 102 for free ambulance service",
+      "Get taken to nearest empaneled hospital",
+      "Treatment starts immediately - no payment needed",
+      "Hospital bills government directly"
+    ],
+    "application_steps_hi": [
+      "मुफ्त एम्बुलेंस सेवा के लिए 102 डायल करें",
+      "निकटतम सूचीबद्ध अस्पताल ले जाएं",
+      "इलाज तुरंत शुरू - कोई भुगतान नहीं",
+      "अस्पताल सीधे सरकार को बिल भेजता है"
+    ],
+    "official_link": "https://health.delhi.gov.in/farishte-dilli-ke",
+    "helpline": "102",
+    "states": ["Delhi"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2026-01-05",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "delhi-mohalla-clinic",
+    "name": "Delhi Mohalla Clinic",
+    "name_hi": "दिल्ली मोहल्ला क्लिनिक",
+    "category": "health",
+    "category_hi": "स्वास्थ्य",
+    "benefit": "Free primary healthcare services and medicines",
+    "benefit_hi": "मुफ्त प्राथमिक स्वास्थ्य सेवाएं और दवाइयां",
+    "description": "Delhi Government's neighborhood clinics providing free primary healthcare, diagnostic tests, and medicines.",
+    "description_hi": "दिल्ली सरकार के पड़ोस के क्लिनिक जो मुफ्त प्राथमिक स्वास्थ्य सेवा, नैदानिक परीक्षण और दवाइयां प्रदान करते हैं।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": null
+    },
+    "eligibility_text": "All Delhi residents, no income criteria",
+    "eligibility_text_hi": "सभी दिल्ली निवासी, कोई आय मानदंड नहीं",
+    "documents": ["Aadhaar Card or any Delhi address proof"],
+    "documents_hi": ["आधार कार्ड या कोई भी दिल्ली पता प्रमाण"],
+    "application_steps": [
+      "Visit nearest Mohalla Clinic",
+      "Register with Aadhaar or address proof",
+      "Get free consultation and medicines",
+      "Free diagnostic tests if prescribed"
+    ],
+    "application_steps_hi": [
+      "निकटतम मोहल्ला क्लिनिक जाएं",
+      "आधार या पता प्रमाण के साथ पंजीकरण करें",
+      "मुफ्त परामर्श और दवाइयां प्राप्त करें",
+      "यदि निर्धारित हो तो मुफ्त नैदानिक परीक्षण"
+    ],
+    "official_link": "https://health.delhi.gov.in/mohalla-clinic",
+    "helpline": "1800-111-444",
+    "states": ["Delhi"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-12-20",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "delhi-happiness-curriculum",
+    "name": "Delhi Happiness Curriculum",
+    "name_hi": "दिल्ली हैप्पीनेस करिकुलम",
+    "category": "education",
+    "category_hi": "शिक्षा",
+    "benefit": "Free mindfulness and happiness education for students",
+    "benefit_hi": "छात्रों के लिए मुफ्त माइंडफुलनेस और खुशहाली शिक्षा",
+    "description": "Delhi Government's innovative curriculum focusing on mindfulness, meditation, and character development for students.",
+    "description_hi": "दिल्ली सरकार की अभिनव पाठ्यक्रम जो छात्रों के लिए माइंडफुलनेस, ध्यान और चरित्र विकास पर केंद्रित है।",
+    "eligibility": {
+      "occupation": ["student"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 5,
+      "gender": null
+    },
+    "eligibility_text": "Students in Delhi government schools from classes Nursery to 8th",
+    "eligibility_text_hi": "नर्सरी से 8वीं कक्षा तक दिल्ली सरकारी स्कूलों के छात्र",
+    "documents": ["School Enrollment"],
+    "documents_hi": ["स्कूल नामांकन"],
+    "application_steps": [
+      "Enroll child in Delhi government school",
+      "Happiness Curriculum is part of daily schedule",
+      "No separate application needed"
+    ],
+    "application_steps_hi": [
+      "बच्चे को दिल्ली सरकारी स्कूल में नामांकित करें",
+      "हैप्पीनेस करिकुलम दैनिक समय सारिणी का हिस्सा है",
+      "कोई अलग आवेदन नहीं चाहिए"
+    ],
+    "official_link": "https://edudel.nic.in",
+    "helpline": "011-23860015",
+    "states": ["Delhi"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-06-15",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "up-kanya-sumangala",
+    "name": "UP Kanya Sumangala Yojana",
+    "name_hi": "उत्तर प्रदेश कन्या सुमंगला योजना",
+    "category": "women",
+    "category_hi": "महिला एवं बाल विकास",
+    "benefit": "Financial assistance of ₹15,000 in installments for girl child",
+    "benefit_hi": "बालिका के लिए किश्तों में ₹15,000 की वित्तीय सहायता",
+    "description": "Uttar Pradesh Government scheme providing financial assistance for girl child's education and marriage at different stages.",
+    "description_hi": "उत्तर प्रदेश सरकार की योजना जो विभिन्न चरणों में बालिका की शिक्षा और विवाह के लिए वित्तीय सहायता प्रदान करती है।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": 300000,
+      "age_min": null,
+      "gender": "female"
+    },
+    "eligibility_text": "Girl children born in UP with family income up to ₹3 lakh",
+    "eligibility_text_hi": "UP में जन्मी बालिकाएं जिनकी पारिवारिक आय ₹3 लाख तक है",
+    "documents": ["Birth Certificate", "Parents' ID Proof (UP)", "Income Certificate", "Bank Passbook"],
+    "documents_hi": ["जन्म प्रमाण पत्र", "माता-पिता का पहचान पत्र (UP)", "आय प्रमाण पत्र", "बैंक पासबुक"],
+    "application_steps": [
+      "Visit nearest Women Welfare Department office",
+      "Fill Kanya Sumangala application form",
+      "Submit required documents",
+      "Get registration number",
+      "Track application status online"
+    ],
+    "application_steps_hi": [
+      "निकटतम महिला कल्याण विभाग कार्यालय जाएं",
+      "कन्या सुमंगला आवेदन पत्र भरें",
+      "आवश्यक दस्तावेज जमा करें",
+      "पंजीकरण नंबर प्राप्त करें",
+      "आवेदन की स्थिति ऑनलाइन ट्रैक करें"
+    ],
+    "official_link": "https://mksy.up.gov.in",
+    "helpline": "1800-180-4314",
+    "states": ["Uttar Pradesh"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2026-01-20",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "up-mukhya-mantri-kanya-vivah",
+    "name": "UP Mukhya Mantri Kanya Vivah Yojana",
+    "name_hi": "उत्तर प्रदेश मुख्यमंत्री कन्या विवाह योजना",
+    "category": "women",
+    "category_hi": "महिला एवं बाल विकास",
+    "benefit": "Financial assistance of ₹51,000 for marriage of daughters",
+    "benefit_hi": "पुत्रियों के विवाह के लिए ₹51,000 की वित्तीय सहायता",
+    "description": "Uttar Pradesh Government scheme providing financial assistance for marriage of daughters from poor families.",
+    "description_hi": "उत्तर प्रदेश सरकार की योजना जो गरीब परिवारों की पुत्रियों के विवाह के लिए वित्तीय सहायता प्रदान करती है।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": 200000,
+      "age_min": 18,
+      "gender": "female"
+    },
+    "eligibility_text": "Girls from poor families with income up to ₹2 lakh, bride age minimum 18 years",
+    "eligibility_text_hi": "₹2 लाख तक की आय वाले गरीब परिवारों की लड़कियां, दुल्हन की न्यूनतम आयु 18 वर्ष",
+    "documents": ["Aadhaar Card", "Income Certificate", "Age Proof", "Marriage Invitation Card", "Bank Passbook"],
+    "documents_hi": ["आधार कार्ड", "आय प्रमाण पत्र", "आयु प्रमाण", "विवाह निमंत्रण पत्र", "बैंक पासबुक"],
+    "application_steps": [
+      "Visit nearest District Probation Office",
+      "Fill the Kanya Vivah application form",
+      "Submit required documents before marriage",
+      "Get approval from concerned officer",
+      "Receive amount in bank account after marriage"
+    ],
+    "application_steps_hi": [
+      "निकटतम जिला परिवीक्षा कार्यालय जाएं",
+      "कन्या विवाह आवेदन पत्र भरें",
+      "शादी से पहले आवश्यक दस्तावेज जमा करें",
+      "संबंधित अधिकारी से अनुमोदन प्राप्त करें",
+      "शादी के बाद बैंक खाते में राशि प्राप्त करें"
+    ],
+    "official_link": "https://socialwelfareup.upsdc.gov.in",
+    "helpline": "1800-180-5111",
+    "states": ["Uttar Pradesh"],
+    "deadline": "Apply at least 30 days before marriage",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-10-15",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "up-old-age-pension",
+    "name": "UP Old Age Pension Scheme",
+    "name_hi": "उत्तर प्रदेश वृद्धावस्था पेंशन योजना",
+    "category": "financial",
+    "category_hi": "वित्तीय",
+    "benefit": "Monthly pension of ₹1,000 for elderly",
+    "benefit_hi": "वृद्धों के लिए ₹1,000 की मासिक पेंशन",
+    "description": "Uttar Pradesh Government scheme providing monthly pension to elderly citizens from poor families.",
+    "description_hi": "उत्तर प्रदेश सरकार की योजना जो गरीब परिवारों के वृद्ध नागरिकों को मासिक पेंशन प्रदान करती है।",
+    "eligibility": {
+      "occupation": ["retired"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 60,
+      "gender": null
+    },
+    "eligibility_text": "Uttar Pradesh residents aged 60+ from BPL families",
+    "eligibility_text_hi": "BPL परिवारों के 60+ वर्ष के उत्तर प्रदेश निवासी",
+    "documents": ["Aadhaar Card", "Age Proof", "BPL Card", "Bank Passbook", "Residence Proof"],
+    "documents_hi": ["आधार कार्ड", "आयु प्रमाण", "BPL कार्ड", "बैंक पासबुक", "निवास प्रमाण"],
+    "application_steps": [
+      "Visit nearest District Social Welfare Office",
+      "Fill Old Age Pension application form",
+      "Submit required documents",
+      "Get acknowledgment receipt",
+      "Receive pension in bank account"
+    ],
+    "application_steps_hi": [
+      "निकटतम जिला समाज कल्याण कार्यालय जाएं",
+      "वृद्धावस्था पेंशन आवेदन पत्र भरें",
+      "आवश्यक दस्तावेज जमा करें",
+      "पावती रसीद प्राप्त करें",
+      "बैंक खाते में पेंशन प्राप्त करें"
+    ],
+    "official_link": "https://sspy-up.gov.in",
+    "helpline": "1800-180-5111",
+    "states": ["Uttar Pradesh"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-09-25",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "up-divyang-pension",
+    "name": "UP Divyang Pension Scheme",
+    "name_hi": "उत्तर प्रदेश दिव्यांग पेंशन योजना",
+    "category": "financial",
+    "category_hi": "वित्तीय",
+    "benefit": "Monthly pension of ₹1,000 for disabled persons",
+    "benefit_hi": "दिव्यांग व्यक्तियों के लिए ₹1,000 की मासिक पेंशन",
+    "description": "Uttar Pradesh Government scheme providing monthly pension to persons with disabilities.",
+    "description_hi": "उत्तर प्रदेश सरकार की योजना जो दिव्यांग व्यक्तियों को मासिक पेंशन प्रदान करती है।",
+    "eligibility": {
+      "occupation": null,
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "UP residents with 40% or more disability, BPL category",
+    "eligibility_text_hi": "40% या अधिक दिव्यांगता वाले UP निवासी, BPL श्रेणी",
+    "documents": ["Aadhaar Card", "Disability Certificate", "BPL Card", "Bank Passbook", "Residence Proof"],
+    "documents_hi": ["आधार कार्ड", "दिव्यांगता प्रमाण पत्र", "BPL कार्ड", "बैंक पासबुक", "निवास प्रमाण"],
+    "application_steps": [
+      "Visit nearest District Social Welfare Office",
+      "Fill Divyang Pension application form",
+      "Submit disability certificate and other documents",
+      "Get acknowledgment receipt",
+      "Receive pension in bank account"
+    ],
+    "application_steps_hi": [
+      "निकटतम जिला समाज कल्याण कार्यालय जाएं",
+      "दिव्यांग पेंशन आवेदन पत्र भरें",
+      "दिव्यांगता प्रमाण पत्र और अन्य दस्तावेज जमा करें",
+      "पावती रसीद प्राप्त करें",
+      "बैंक खाते में पेंशन प्राप्त करें"
+    ],
+    "official_link": "https://disability.up.nic.in",
+    "helpline": "1800-180-5111",
+    "states": ["Uttar Pradesh"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-08-10",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "up-free-laptop-yojana",
+    "name": "UP Free Laptop Yojana",
+    "name_hi": "उत्तर प्रदेश मुफ्त लैपटॉप योजना",
+    "category": "education",
+    "category_hi": "शिक्षा",
+    "benefit": "Free laptop and tablet for meritorious students",
+    "benefit_hi": "मेधावी छात्रों के लिए मुफ्त लैपटॉप और टैबलेट",
+    "description": "Uttar Pradesh Government scheme providing free laptops and tablets to students passing 10th and 12th with good marks.",
+    "description_hi": "उत्तर प्रदेश सरकार की योजना जो अच्छे अंकों से 10वीं और 12वीं पास छात्रों को मुफ्त लैपटॉप और टैबलेट प्रदान करती है।",
+    "eligibility": {
+      "occupation": ["student"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": null,
+      "gender": null
+    },
+    "eligibility_text": "UP Board students passing 10th/12th with minimum 65% marks",
+    "eligibility_text_hi": "न्यूनतम 65% अंकों से 10वीं/12वीं पास UP बोर्ड के छात्र",
+    "documents": ["Marksheet", "Aadhaar Card", "School ID", "Bank Passbook"],
+    "documents_hi": ["अंकसूची", "आधार कार्ड", "स्कूल आईडी", "बैंक पासबुक"],
+    "application_steps": [
+      "Register on UP Free Laptop portal when announced",
+      "Fill application with marksheet details",
+      "Submit required documents at school",
+      "Wait for merit list announcement",
+      "Collect laptop at designated distribution center"
+    ],
+    "application_steps_hi": [
+      "घोषणा होने पर UP मुफ्त लैपटॉप पोर्टल पर पंजीकरण करें",
+      "अंकसूची विवरण के साथ आवेदन भरें",
+      "स्कूल में आवश्यक दस्तावेज जमा करें",
+      "मेरिट लिस्ट की घोषणा का इंतजार करें",
+      "निर्धारित वितरण केंद्र पर लैपटॉप संग्रह करें"
+    ],
+    "official_link": "https://up.gov.in/free-laptop-yojana",
+    "helpline": "1800-180-5111",
+    "states": ["Uttar Pradesh"],
+    "deadline": "Announced periodically (Check website)",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-07-30",
+    "scheme_expiry_date": null
+  },
+  {
+    "id": "up-kisan-bima",
+    "name": "UP Kisan Bima Yojana",
+    "name_hi": "उत्तर प्रदेश किसान बीमा योजना",
+    "category": "agriculture",
+    "category_hi": "कृषि",
+    "benefit": "Life insurance cover of ₹5 lakh for farmers",
+    "benefit_hi": "किसानों के लिए ₹5 लाख का जीवन बीमा कवर",
+    "description": "Uttar Pradesh Government scheme providing life insurance coverage to farmers at minimal premium.",
+    "description_hi": "उत्तर प्रदेश सरकार की योजना जो न्यूनतम प्रीमियम पर किसानों को जीवन बीमा कवरेज प्रदान करती है।",
+    "eligibility": {
+      "occupation": ["farmer"],
+      "landholding_max": null,
+      "income_max": null,
+      "age_min": 18,
+      "gender": null
+    },
+    "eligibility_text": "All farmers of Uttar Pradesh with valid land records",
+    "eligibility_text_hi": "वैध भूमि अभिलेख वाले उत्तर प्रदेश के सभी किसान",
+    "documents": ["Aadhaar Card", "Land Records", "Bank Passbook", "Passport Size Photo"],
+    "documents_hi": ["आधार कार्ड", "भूमि अभिलेख", "बैंक पासबुक", "पासपोर्ट साइज फोटो"],
+    "application_steps": [
+      "Visit nearest Agriculture Department office",
+      "Fill Kisan Bima application form",
+      "Submit land records and other documents",
+      "Pay nominal premium",
+      "Get insurance certificate"
+    ],
+    "application_steps_hi": [
+      "निकटतम कृषि विभाग कार्यालय जाएं",
+      "किसान बीमा आवेदन पत्र भरें",
+      "भूमि अभिलेख और अन्य दस्तावेज जमा करें",
+      "नाममात्र प्रीमियम का भुगतान करें",
+      "बीमा प्रमाण पत्र प्राप्त करें"
+    ],
+    "official_link": "https://agriculture.up.gov.in",
+    "helpline": "1800-180-1551",
+    "states": ["Uttar Pradesh"],
+    "deadline": "Ongoing",
+    "level": "state",
+    "status": "active",
+    "portal_last_updated": "2026-02-15",
+    "govt_last_updated": "2025-11-05",
+    "scheme_expiry_date": null
   }
 ]

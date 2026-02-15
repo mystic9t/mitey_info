@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/lib/language-context";
+import schemes from "@/data/schemes.json";
 
 const translations = {
   en: {
@@ -103,11 +104,11 @@ export default function AboutPage() {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-primary/20">
-          <div className="text-4xl font-bold mb-2">18+</div>
+          <div className="text-4xl font-bold mb-2">{schemes.length}</div>
           <div className="text-sm opacity-90">{t.stats.schemes}</div>
         </div>
         <div className="bg-secondary rounded-2xl p-6 text-center">
-          <div className="text-4xl font-bold text-foreground mb-2">6</div>
+          <div className="text-4xl font-bold text-foreground mb-2">{[...new Set(schemes.map(s => s.category))].length}</div>
           <div className="text-sm text-muted-foreground">{t.stats.categories}</div>
         </div>
         <div className="bg-secondary rounded-2xl p-6 text-center">
@@ -146,13 +147,13 @@ export default function AboutPage() {
         <p className="text-muted-foreground">{t.contact.desc}</p>
         <p className="mt-4">
           <a
-            href="mailto:feedback@localgovassist.in"
+            href="mailto:feedback@mystic9t.fyi"
             className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            feedback@localgovassist.in
+            feedback@mystic9t.fyi
           </a>
         </p>
       </div>

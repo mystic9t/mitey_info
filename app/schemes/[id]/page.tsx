@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { use } from "react";
 import schemesData from "@/data/schemes.json";
 import { Scheme } from "@/types/scheme";
 import SchemeDetailClient from "./client";
@@ -13,13 +13,14 @@ export function generateStaticParams() {
 }
 
 interface Props {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default function SchemeDetailPage({ params }: Props) {
-  const scheme = schemes.find((s) => s.id === params.id);
+  const { id } = use(params);
+  const scheme = schemes.find((s) => s.id === id);
 
   if (!scheme) {
     notFound();
