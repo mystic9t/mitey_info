@@ -43,11 +43,34 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        saffron: {
+          DEFAULT: "hsl(var(--saffron))",
+          foreground: "hsl(var(--saffron-foreground))",
+        },
+        "india-green": {
+          DEFAULT: "hsl(var(--india-green))",
+          foreground: "hsl(var(--india-green-foreground))",
+        },
+        navy: {
+          DEFAULT: "hsl(var(--navy))",
+          foreground: "hsl(var(--navy-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      animation: {
+        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "ping-slow": "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
+        "glow": "glow 2s ease-in-out infinite alternate",
+      },
+      keyframes: {
+        glow: {
+          "0%": { boxShadow: "0 0 5px hsl(var(--saffron) / 0.3)" },
+          "100%": { boxShadow: "0 0 20px hsl(var(--saffron) / 0.6)" },
+        },
       },
     },
   },
