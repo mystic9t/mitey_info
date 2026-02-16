@@ -61,13 +61,13 @@ const translations = {
   },
 };
 
-const categoryInfo: Record<string, { nameEn: string; nameHi: string; color: string; icon: string }> = {
-  agriculture: { nameEn: "Agriculture", nameHi: "कृषि", color: "bg-green-100 text-green-700", icon: "🌾" },
-  health: { nameEn: "Health", nameHi: "स्वास्थ्य", color: "bg-red-100 text-red-700", icon: "🏥" },
-  housing: { nameEn: "Housing", nameHi: "आवास", color: "bg-orange-100 text-orange-700", icon: "🏠" },
-  women: { nameEn: "Women & Child", nameHi: "महिला एवं बाल विकास", color: "bg-pink-100 text-pink-700", icon: "👩‍👧" },
-  financial: { nameEn: "Financial", nameHi: "वित्तीय", color: "bg-blue-100 text-blue-700", icon: "💰" },
-  education: { nameEn: "Education", nameHi: "शिक्षा", color: "bg-purple-100 text-purple-700", icon: "📚" },
+const categoryInfo: Record<string, { nameEn: string; nameHi: string; color: string; borderColor: string; icon: string }> = {
+  agriculture: { nameEn: "Agriculture", nameHi: "कृषि", color: "bg-india-green/10 text-india-green", borderColor: "bg-india-green", icon: "🌾" },
+  health: { nameEn: "Health", nameHi: "स्वास्थ्य", color: "bg-red-50 text-red-700", borderColor: "bg-red-500", icon: "🏥" },
+  housing: { nameEn: "Housing", nameHi: "आवास", color: "bg-saffron/10 text-saffron", borderColor: "bg-saffron", icon: "🏠" },
+  women: { nameEn: "Women & Child", nameHi: "महिला एवं बाल विकास", color: "bg-pink-50 text-pink-700", borderColor: "bg-pink-500", icon: "👩‍👧" },
+  financial: { nameEn: "Financial", nameHi: "वित्तीय", color: "bg-navy/10 text-navy", borderColor: "bg-navy", icon: "💰" },
+  education: { nameEn: "Education", nameHi: "शिक्षा", color: "bg-purple-50 text-purple-700", borderColor: "bg-purple-500", icon: "📚" },
 };
 
 interface SchemeDetailClientProps {
@@ -101,13 +101,13 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
         <span className="text-foreground font-medium truncate">{name}</span>
       </nav>
 
-      <div className="bg-gradient-to-br from-primary/5 via-primary/3 to-transparent rounded-3xl p-8 mb-8">
+      <div className="bg-gradient-to-br from-saffron/5 via-saffron/3 to-transparent rounded-3xl p-8 mb-8">
         <div className="flex items-start gap-4 mb-6">
           <span className={`badge-category ${info.color}`}>
             {language === "en" ? info.nameEn : info.nameHi}
           </span>
           {scheme.level === "central" ? (
-            <span className="badge-category bg-blue-50 text-blue-700 border border-blue-200">
+            <span className="badge-category bg-navy/10 text-navy border border-navy/20">
               🇮🇳 All India
             </span>
           ) : (
@@ -142,7 +142,7 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-6 text-white shadow-lg shadow-primary/20">
+        <div className="bg-gradient-to-br from-saffron to-saffron/80 rounded-2xl p-6 text-white shadow-lg shadow-saffron/20">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,16 +154,16 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
           <p className="text-2xl font-bold">{benefit}</p>
         </div>
 
-        <div className="bg-secondary rounded-2xl p-6">
+        <div className="bg-gradient-to-br from-india-green to-india-green/80 rounded-2xl p-6 text-white shadow-lg shadow-india-green/20">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-              <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h2 className="text-lg font-semibold text-foreground">{t.applicationStatus}</h2>
+            <h2 className="text-lg font-semibold opacity-90">{t.applicationStatus}</h2>
           </div>
-          <p className="text-xl font-bold text-green-600">{scheme.deadline}</p>
+          <p className="text-2xl font-bold">{scheme.deadline}</p>
         </div>
       </div>
 
@@ -175,8 +175,8 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
           <div className="grid md:grid-cols-2 gap-4">
             {scheme.eligibility.occupation && scheme.eligibility.occupation.length > 0 && (
               <div className="flex items-start gap-3 p-4 bg-secondary rounded-xl">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-8 h-8 bg-saffron/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-saffron" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
@@ -184,7 +184,7 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
                   <h3 className="font-semibold text-foreground text-sm">{t.occupation}</h3>
                   <div className="flex flex-wrap gap-1 mt-2">
                     {scheme.eligibility.occupation.map((occ) => (
-                      <span key={occ} className="px-2 py-1 bg-primary/10 text-primary rounded-md text-xs font-medium capitalize">
+                      <span key={occ} className="px-2 py-1 bg-saffron/10 text-saffron rounded-md text-xs font-medium capitalize">
                         {occ}
                       </span>
                     ))}
@@ -195,8 +195,8 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
 
             {scheme.eligibility.age_min && (
               <div className="flex items-start gap-3 p-4 bg-secondary rounded-xl">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-8 h-8 bg-navy/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
@@ -211,8 +211,8 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
 
             {scheme.eligibility.income_max && typeof scheme.eligibility.income_max === "number" && (
               <div className="flex items-start gap-3 p-4 bg-secondary rounded-xl">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-8 h-8 bg-india-green/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-india-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -227,8 +227,8 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
 
             {scheme.eligibility.landholding_max && (
               <div className="flex items-start gap-3 p-4 bg-secondary rounded-xl">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-8 h-8 bg-saffron/10 rounded-lg flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-saffron" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
                   </svg>
                 </div>
@@ -250,8 +250,8 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
           <ul className="grid md:grid-cols-2 gap-3">
             {documents.map((doc, index) => (
               <li key={index} className="flex items-center gap-3 p-3 bg-secondary rounded-xl">
-                <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center shrink-0">
-                  <svg className="w-4 h-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-6 h-6 bg-india-green/10 rounded-full flex items-center justify-center shrink-0">
+                  <svg className="w-4 h-4 text-india-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
@@ -268,7 +268,7 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
           <ol className="space-y-4">
             {steps.map((step, index) => (
               <li key={index} className="flex gap-4">
-                <span className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-xl flex items-center justify-center font-bold text-sm shadow-md shadow-primary/20">
+                <span className="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-xl flex items-center justify-center font-bold text-sm shadow-md shadow-navy/20">
                   {index + 1}
                 </span>
                 <span className="pt-2 text-foreground">{step}</span>
@@ -285,7 +285,7 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
             href={scheme.official_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 p-5 bg-gradient-to-r from-primary to-primary/80 text-white rounded-2xl hover:shadow-lg hover:shadow-primary/20 transition-all group"
+            className="flex items-center gap-4 p-5 bg-gradient-to-r from-navy to-navy/80 text-white rounded-2xl hover:shadow-lg hover:shadow-navy/20 transition-all group"
           >
             <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -302,8 +302,8 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
             href={`tel:${scheme.helpline}`}
             className="flex items-center gap-4 p-5 bg-secondary rounded-2xl hover:bg-secondary/80 transition-all group"
           >
-            <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-              <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="w-12 h-12 bg-saffron/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg className="w-6 h-6 text-saffron" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </div>
