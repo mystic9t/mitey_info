@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useLanguage } from "@/lib/language-context";
@@ -82,6 +82,16 @@ function SchemesContent() {
   const [selectedState, setSelectedState] = useState("");
   const [isCompact, setIsCompact] = useState(false);
 
+  // Set default view based on screen size: list on mobile, cards on desktop
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsCompact(window.innerWidth < 768);
+    };
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   const t = translations[language];
 
   const filteredSchemes = useMemo(() => {
@@ -125,7 +135,7 @@ function SchemesContent() {
   };
 
   return (
-    <div className="px-3 md:px-6 lg:px-8 space-y-4 md:space-y-6">
+    <div className="px-4 sm:px-6 md:px-8 lg:px-12 space-y-4 md:space-y-6 pb-8">
       <div className="text-center pt-2">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-1">{t.title}</h1>
         <p className="text-xs md:text-sm text-muted-foreground">{t.subtitle}</p>
@@ -224,8 +234,9 @@ function SchemesContent() {
       {filteredSchemes.length > 0 ? (
         isCompact ? (
           /* Compact Table View */
-          <div className="overflow-x-auto -mx-3 md:mx-0">
-            <table className="w-full text-xs md:text-sm">
+          <div className="border rounded-lg overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs md:text-sm">
               <thead className="bg-secondary/50 border-y">
                 <tr>
                   <th className="text-left py-2 px-3 font-medium text-muted-foreground whitespace-nowrap">{t.category}</th>
@@ -274,6 +285,7 @@ function SchemesContent() {
                 })}
               </tbody>
             </table>
+            </div>
           </div>
         ) : (
           /* Card Grid View */
@@ -333,7 +345,7 @@ function SchemesContent() {
       )}
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-br from-saffron/5 to-saffron/10 border border-saffron/20 rounded-lg p-4 md:p-6 text-center mb-4">
+      <div className="bg-gradient-to-br from-saffron/5 to-saffron/10 border border-saffron/20 rounded-lg p-4 md:p-6 text-center mb-16 md:mb-20">
         <h2 className="text-base md:text-lg font-bold text-foreground mb-1">{t.notSure}</h2>
         <p className="text-xs md:text-sm text-muted-foreground mb-3">{t.notSureDesc}</p>
         <Link href="/checker" className="btn-primary text-xs md:text-sm px-4 md:px-5 py-2 md:py-2.5">
