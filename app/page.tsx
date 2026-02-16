@@ -47,8 +47,8 @@ export default function Home() {
   return (
     <div className="h-[calc(100vh-120px)] overflow-hidden relative bg-white">
       {/* Animated India Map Background */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-        <IndiaMap className="w-[70%] h-auto max-w-xl" showDots={true} />
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <IndiaMap className="w-[105%] h-auto max-w-3xl opacity-20" showDots={true} />
       </div>
 
       {/* Gradient overlay for text readability */}
