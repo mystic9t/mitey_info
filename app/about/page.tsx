@@ -6,11 +6,11 @@ import schemes from "@/data/schemes.json";
 
 const translations = {
   en: {
-    title: "About LocalGovAssist",
+    title: "About Saral Yojana",
     subtitle: "Helping Indians discover and access government schemes",
     mission: {
       title: "Our Mission",
-      intro: "LocalGovAssist is a simple, accessible web portal designed to help Indian citizens discover government schemes they may be eligible for. We believe that everyone deserves easy access to information about the benefits and support available to them.",
+      intro: "Saral Yojana is a simple, accessible web portal designed to help Indian citizens discover government schemes they may be eligible for. We believe that everyone deserves easy access to information about the benefits and support available to them.",
       list: [
         "Simple, easy-to-understand information about government schemes",
         "Quick eligibility checking without any registration",
@@ -25,7 +25,7 @@ const translations = {
     },
     notice: {
       title: "Important Notice",
-      disclaimer: "LocalGovAssist is an informational portal only. We are not affiliated with any government agency. All scheme information is sourced from public government websites and documents.",
+      disclaimer: "Saral Yojana is an informational portal only. We are not affiliated with any government agency. All scheme information is sourced from public government websites and documents.",
       verify: "Please always verify details and apply through official government channels. Eligibility criteria, benefits, and application processes may change. We do not process applications or provide official services.",
     },
     contact: {
@@ -45,11 +45,11 @@ const translations = {
     },
   },
   hi: {
-    title: "लोकल गवर्नमेंट असिस्ट के बारे में",
+    title: "सरल योजना के बारे में",
     subtitle: "भारतीयों को सरकारी योजनाएं खोजने और उन तक पहुंचने में मदद करना",
     mission: {
       title: "हमारा मिशन",
-      intro: "लोकल गवर्नमेंट असिस्ट एक सरल, सुलभ वेब पोर्टल है जो भारतीय नागरिकों को उन सरकारी योजनाओं की खोज में मदद करने के लिए डिज़ाइन किया गया है जिनके लिए वे पात्र हो सकते हैं। हम मानते हैं कि हर किसी को उन लाभों और सहायता तक आसान पहुंच का हकदार है जो उनके लिए उपलब्ध हैं।",
+      intro: "सरल योजना एक सरल, सुलभ वेब पोर्टल है जो भारतीय नागरिकों को उन सरकारी योजनाओं की खोज में मदद करने के लिए डिज़ाइन किया गया है जिनके लिए वे पात्र हो सकते हैं। हम मानते हैं कि हर किसी को उन लाभों और सहायता तक आसान पहुंच का हकदार है जो उनके लिए उपलब्ध हैं।",
       list: [
         "सरकारी योजनाओं के बारे में सरल, समझने में आसान जानकारी",
         "बिना किसी पंजीकरण के त्वरित पात्रता जांच",
@@ -64,7 +64,7 @@ const translations = {
     },
     notice: {
       title: "महत्वपूर्ण सूचना",
-      disclaimer: "लोकल गवर्नमेंट असिस्ट केवल एक सूचना पोर्टल है। हम किसी भी सरकारी एजेंसी से संबद्ध नहीं हैं। सभी योजना जानकारी सार्वजनिक सरकारी वेबसाइटों और दस्तावेजों से प्राप्त की गई है।",
+      disclaimer: "सरल योजना केवल एक सूचना पोर्टल है। हम किसी भी सरकारी एजेंसी से संबद्ध नहीं हैं। सभी योजना जानकारी सार्वजनिक सरकारी वेबसाइटों और दस्तावेजों से प्राप्त की गई है।",
       verify: "कृपया हमेशा विवरण सत्यापित करें और आधिकारिक सरकारी चैनलों के माध्यम से आवेदन करें। पात्रता मानदंड, लाभ और आवेदन प्रक्रियाएं बदल सकती हैं। हम आवेदनों को संसाधित नहीं करते या आधिकारिक सेवाएं प्रदान नहीं करते।",
     },
     contact: {
@@ -103,17 +103,17 @@ export default function AboutPage() {
       </div>
 
       <div className="grid md:grid-cols-3 gap-6">
-        <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-primary/20">
+        <div className="bg-gradient-to-br from-navy to-navy/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-navy/20">
           <div className="text-4xl font-bold mb-2">{schemes.length}</div>
           <div className="text-sm opacity-90">{t.stats.schemes}</div>
         </div>
-        <div className="bg-secondary rounded-2xl p-6 text-center">
-          <div className="text-4xl font-bold text-foreground mb-2">{[...new Set(schemes.map(s => s.category))].length}</div>
-          <div className="text-sm text-muted-foreground">{t.stats.categories}</div>
+        <div className="bg-gradient-to-br from-saffron to-saffron/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-saffron/20">
+          <div className="text-4xl font-bold mb-2">{[...new Set(schemes.map(s => s.category))].length}</div>
+          <div className="text-sm opacity-90">{t.stats.categories}</div>
         </div>
-        <div className="bg-secondary rounded-2xl p-6 text-center">
-          <div className="text-4xl font-bold text-foreground mb-2">2</div>
-          <div className="text-sm text-muted-foreground">{t.stats.languages}</div>
+        <div className="bg-gradient-to-br from-india-green to-india-green/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-india-green/20">
+          <div className="text-4xl font-bold mb-2">2</div>
+          <div className="text-sm opacity-90">{t.stats.languages}</div>
         </div>
       </div>
 
