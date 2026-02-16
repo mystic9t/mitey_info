@@ -176,19 +176,19 @@ export default function CheckerPage() {
     setIsChecking(false);
   };
 
-  const categoryColors: Record<string, string> = {
-    agriculture: "bg-green-100 text-green-700",
-    health: "bg-red-100 text-red-700",
-    housing: "bg-orange-100 text-orange-700",
-    women: "bg-pink-100 text-pink-700",
-    financial: "bg-blue-100 text-blue-700",
-    education: "bg-purple-100 text-purple-700",
+  const categoryColors: Record<string, { color: string; borderColor: string }> = {
+    agriculture: { color: "bg-india-green/10 text-india-green", borderColor: "bg-india-green" },
+    health: { color: "bg-red-50 text-red-700", borderColor: "bg-red-500" },
+    housing: { color: "bg-saffron/10 text-saffron", borderColor: "bg-saffron" },
+    women: { color: "bg-pink-50 text-pink-700", borderColor: "bg-pink-500" },
+    financial: { color: "bg-navy/10 text-navy", borderColor: "bg-navy" },
+    education: { color: "bg-purple-50 text-purple-700", borderColor: "bg-purple-500" },
   };
 
   return (
     <div className="max-w-2xl mx-auto">
       <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-saffron/10 text-saffron rounded-full text-sm font-medium mb-4">
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
@@ -275,7 +275,7 @@ export default function CheckerPage() {
             <button
               onClick={checkEligibility}
               disabled={!formData.age || isChecking}
-              className="w-full py-4 bg-primary text-white rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary/20"
+              className="w-full py-4 bg-navy text-white rounded-xl font-semibold text-lg hover:bg-saffron transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-navy/20"
             >
               {isChecking ? t.checkingButton : t.checkButton}
             </button>
@@ -283,10 +283,10 @@ export default function CheckerPage() {
         </div>
       ) : (
         <div className="space-y-6 animate-fade-in">
-          <div className={`rounded-2xl p-6 ${results.length > 0 ? 'bg-emerald-50 border border-emerald-200' : 'bg-amber-50 border border-amber-200'}`}>
+          <div className={`rounded-2xl p-6 ${results.length > 0 ? 'bg-india-green/10 border border-india-green/30' : 'bg-amber-50 border border-amber-200'}`}>
             <div className="flex items-center gap-3 mb-2">
               {results.length > 0 ? (
-                <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 bg-india-green rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -311,44 +311,48 @@ export default function CheckerPage() {
 
           {results.length > 0 && (
             <div className="grid gap-4">
-              {results.map((scheme) => (
-                <Link
-                  key={scheme.id}
-                  href={`/schemes/${scheme.id}`}
-                  className="scheme-card group"
-                >
-                  <div className="flex items-start justify-between mb-3">
-                    <span className={`badge-category ${categoryColors[scheme.category] || 'bg-gray-100 text-gray-700'}`}>
-                      {scheme.category}
+              {results.map((scheme) => {
+                const catInfo = categoryColors[scheme.category] || { color: "bg-gray-100 text-gray-700", borderColor: "bg-gray-400" };
+                return (
+                  <Link
+                    key={scheme.id}
+                    href={`/schemes/${scheme.id}`}
+                    className="scheme-card group relative"
+                  >
+                    <div className={`absolute top-0 left-0 w-1 h-full ${catInfo.borderColor}`} />
+                    <div className="flex items-start justify-between mb-3">
+                      <span className={`badge-category ${catInfo.color}`}>
+                        {scheme.category}
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {language === "en" ? scheme.name : scheme.name_hi}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      {language === "en" ? scheme.benefit : scheme.benefit_hi}
+                    </p>
+                    <span className="text-sm font-medium text-primary inline-flex items-center gap-1">
+                      {t.viewDetails}
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {language === "en" ? scheme.name : scheme.name_hi}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    {language === "en" ? scheme.benefit : scheme.benefit_hi}
-                  </p>
-                  <span className="text-sm font-medium text-primary inline-flex items-center gap-1">
-                    {t.viewDetails}
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
           )}
 
           <div className="flex gap-4">
             <button
               onClick={() => setResults(null)}
-              className="flex-1 py-3 border-2 border-primary text-primary rounded-xl font-semibold hover:bg-primary hover:text-white transition-colors"
+              className="flex-1 py-3 border-2 border-saffron text-saffron rounded-xl font-semibold hover:bg-saffron hover:text-white transition-colors"
             >
               {t.checkAgain}
             </button>
             <Link
               href="/schemes"
-              className="flex-1 py-3 bg-primary text-white rounded-xl font-semibold text-center hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+              className="flex-1 py-3 bg-navy text-white rounded-xl font-semibold text-center hover:bg-saffron transition-colors shadow-lg shadow-navy/20"
             >
               {t.browseAll}
             </Link>

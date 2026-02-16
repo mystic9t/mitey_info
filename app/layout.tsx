@@ -7,9 +7,9 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "LocalGovAssist - Find Government Schemes You Qualify For",
-  description: "Discover central and state government schemes you qualify for. Simple, fast, and available in Hindi and English.",
-  keywords: "government schemes, India, PM Kisan, Ayushman Bharat, PM Awas Yojana, eligibility checker",
+  title: "Saral Yojana - Find Government Schemes You Qualify For | सरल योजना",
+  description: "Discover central and state government schemes you qualify for. Simple, fast, and available in Hindi and English. सरकारी योजनाएं खोजें।",
+  keywords: "government schemes, India, Sarkari Yojana, सरकारी योजना, PM Kisan, Ayushman Bharat, PM Awas Yojana, eligibility checker, yojana",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ return (
         <body className="min-h-screen flex flex-col bg-background font-sans antialiased">
           <LanguageProvider>
             <Header />
-            <main className="flex-1 container mx-auto px-4 py-8">
+            <main className="flex-1">
               {children}
             </main>
             <Footer />
