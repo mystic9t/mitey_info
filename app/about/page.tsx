@@ -90,9 +90,9 @@ export default function AboutPage() {
   const t = translations[language];
 
   return (
-    <div className="max-w-3xl mx-auto space-y-12">
+    <div className="max-w-3xl mx-auto space-y-12 pb-8">
       <div className="text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mt-6 mb-6">
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
@@ -103,11 +103,11 @@ export default function AboutPage() {
       </div>
 
       <div className="grid md:grid-cols-3 gap-6">
-        <div className="bg-gradient-to-br from-navy to-navy/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-navy/20">
+        <div className="bg-gradient-to-br from-saffron to-saffron/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-saffron/20">
           <div className="text-4xl font-bold mb-2">{schemes.length}</div>
           <div className="text-sm opacity-90">{t.stats.schemes}</div>
         </div>
-        <div className="bg-gradient-to-br from-saffron to-saffron/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-saffron/20">
+        <div className="bg-gradient-to-br from-navy to-navy/80 rounded-2xl p-6 text-white text-center shadow-lg shadow-navy/20">
           <div className="text-4xl font-bold mb-2">{[...new Set(schemes.map(s => s.category))].length}</div>
           <div className="text-sm opacity-90">{t.stats.categories}</div>
         </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <div className="bg-gradient-to-br from-secondary to-secondary/50 rounded-2xl p-8 text-center">
+      <div className="bg-gradient-to-br from-secondary to-secondary/50 rounded-2xl p-8 text-center mb-8">
         <h2 className="text-2xl font-bold text-foreground mb-2">{t.cta.title}</h2>
         <p className="text-muted-foreground mb-6">{t.cta.desc}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

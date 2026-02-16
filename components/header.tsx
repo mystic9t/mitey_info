@@ -113,8 +113,11 @@ export function Header() {
             </div>
           </div>
 
-          {isMobileMenuOpen && (
-            <nav className="md:hidden py-4 border-t border-white/20 animate-fade-in">
+        </div>
+
+        {isMobileMenuOpen && (
+          <nav className="md:hidden absolute top-full right-0 w-48 bg-saffron shadow-lg animate-fade-in z-50 rounded-bl-lg">
+            <div className="px-4 py-3">
               <div className="flex flex-col gap-1">
                 <Link
                   href="/schemes"
@@ -138,9 +141,9 @@ export function Header() {
                   {texts.about}
                 </Link>
               </div>
-            </nav>
-          )}
-        </div>
+            </div>
+          </nav>
+        )}
       </div>
     </header>
   );
