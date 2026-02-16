@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/lib/language-context";
 import schemes from "@/data/schemes.json";
-import { IndiaMap } from "@/components/india-map";
 
 const categoryInfo: Record<string, { icon: string; color: string; nameEn: string; nameHi: string }> = {
   agriculture: { icon: "🌾", color: "bg-india-green/10 text-india-green border-india-green/30 hover:bg-india-green/20", nameEn: "Agriculture", nameHi: "कृषि" },
@@ -46,9 +46,16 @@ export default function Home() {
 
   return (
     <div className="h-[calc(100vh-120px)] overflow-hidden relative bg-white">
-      {/* Animated India Map Background */}
+      {/* India Map Background - Grey at 35% opacity */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <IndiaMap className="w-[105%] h-auto max-w-3xl opacity-20" showDots={true} />
+        <Image
+          src="/india-map.webp"
+          alt=""
+          width={1200}
+          height={1200}
+          className="w-[126%] h-auto max-w-4xl grayscale opacity-[0.25]"
+          priority={false}
+        />
       </div>
 
       {/* Gradient overlay for text readability */}
