@@ -1,3 +1,10 @@
+export interface EligibilityCriterion {
+  field: string;
+  value: unknown;
+  weight: number;
+  required: boolean;
+}
+
 export interface Scheme {
   id: string;
   name: string;
@@ -13,8 +20,16 @@ export interface Scheme {
     landholding_max: number | null;
     income_max: number | null;
     age_min: number | null;
+    age_max: number | null;
     gender: string | null;
-    criteria?: string;
+    caste: string[] | null;
+    location_type: string[] | null;
+    bpl_status: boolean | null;
+    disability: boolean | null;
+    marital_status: string | null;
+    employment_sector: string | null;
+    has_pucca_house: boolean | null;
+    weights?: Record<string, number>;
   };
   eligibility_text: string;
   eligibility_text_hi: string;
@@ -31,4 +46,12 @@ export interface Scheme {
   portal_last_updated: string;
   govt_last_updated: string | null;
   scheme_expiry_date: string | null;
+}
+
+export interface EligibilityMatch {
+  scheme: Scheme;
+  confidence: number;
+  matchedCriteria: string[];
+  partialCriteria: string[];
+  missingCriteria: string[];
 }
