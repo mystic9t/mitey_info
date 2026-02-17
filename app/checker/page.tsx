@@ -373,8 +373,8 @@ function calculateConfidenceScore(
     }
   }
 
-  // Occupation check
-  if (scheme.eligibility.occupation !== null && scheme.eligibility.occupation.length > 0) {
+// Occupation check
+  if (scheme.eligibility.occupation && scheme.eligibility.occupation.length > 0) {
     totalWeight += weights.occupation;
     if (formData.occupation !== "other" && scheme.eligibility.occupation.includes(formData.occupation)) {
       matchedWeight += weights.occupation;
@@ -401,8 +401,8 @@ function calculateConfidenceScore(
     }
   }
 
-  // Caste check
-  if (scheme.eligibility.caste !== null && scheme.eligibility.caste.length > 0) {
+// Caste check
+  if (scheme.eligibility.caste && scheme.eligibility.caste.length > 0) {
     totalWeight += weights.caste;
     if (formData.caste !== "other" && scheme.eligibility.caste.includes(formData.caste)) {
       matchedWeight += weights.caste;
@@ -416,7 +416,7 @@ function calculateConfidenceScore(
   }
 
   // Location type check
-  if (scheme.eligibility.location_type !== null && scheme.eligibility.location_type.length > 0) {
+  if (scheme.eligibility.location_type && scheme.eligibility.location_type.length > 0) {
     totalWeight += weights.location;
     if (formData.location !== "other" && scheme.eligibility.location_type.includes(formData.location)) {
       matchedWeight += weights.location;
@@ -528,24 +528,31 @@ export default function CheckerPage() {
     employmentSector: "",
   });
   
-  const [results, setResults] = useState<EligibilityMatch[] | null>(null);
+const [results, setResults] = useState<EligibilityMatch[] | null>(null);
   const [isChecking, setIsChecking] = useState(false);
   const [expandedSchemes, setExpandedSchemes] = useState<Set<string>>(new Set());
 
-  const checkEligibility = () => {
+const checkEligibility = () => {
     setIsChecking(true);
     
-    const scoredSchemes = (schemes as Scheme[]).map((scheme) => 
-      calculateConfidenceScore(scheme, formData)
-    );
-    
-    // Filter schemes with >75% confidence and sort by confidence
-    const filtered = scoredSchemes
-      .filter((match) => match.confidence >= 75)
-      .sort((a, b) => b.confidence - a.confidence);
-    
-    setResults(filtered);
-    setIsChecking(false);
+    // Use setTimeout to allow React to process the state update before heavy computation
+    setTimeout(() => {
+      const allSchemes = schemes as Scheme[];
+      
+      const scoredSchemes: EligibilityMatch[] = [];
+      
+      for (const scheme of allSchemes) {
+        scoredSchemes.push(calculateConfidenceScore(scheme, formData));
+      }
+      
+      // Filter schemes with >75% confidence and sort by confidence
+      const filtered = scoredSchemes
+        .filter((match) => match.confidence >= 75)
+        .sort((a, b) => b.confidence - a.confidence);
+      
+      setResults(filtered);
+      setIsChecking(false);
+    }, 50);
   };
 
   const categoryColors: Record<string, { color: string; borderColor: string }> = {
@@ -790,7 +797,7 @@ export default function CheckerPage() {
               </div>
             </div>
 
-            <button
+<button
               onClick={checkEligibility}
               disabled={!formData.age || isChecking}
               className="w-full py-4 bg-navy text-white rounded-lg font-semibold text-lg hover:bg-saffron transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-navy/20 mt-4"

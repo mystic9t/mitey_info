@@ -9,7 +9,13 @@ const translations = {
     home: "Home",
     schemes: "Schemes",
     benefit: "Benefit",
-    applicationStatus: "Application Status",
+    applicationPeriod: "When to Apply",
+    schemeStatus: "Scheme Status",
+    lastUpdated: "Last Updated",
+    active: "Active - Open for Applications",
+    closed: "Closed - Applications Paused",
+    expiringSoon: "Expiring Soon - Apply Quickly",
+    infoOutdated: "Information May Be Outdated",
     whoCanApply: "Who Can Apply?",
     occupation: "Occupation:",
     ageRequirement: "Age Requirement:",
@@ -36,7 +42,13 @@ const translations = {
     home: "होम",
     schemes: "योजनाएं",
     benefit: "लाभ",
-    applicationStatus: "आवेदन स्थिति",
+    applicationPeriod: "आवेदन की समय सीमा",
+    schemeStatus: "योजना की स्थिति",
+    lastUpdated: "अंतिम अपडेट",
+    active: "सक्रिय - आवेदन खुले हैं",
+    closed: "बंद - आवेदन रुके हुए",
+    expiringSoon: "जल्द समाप्त होगी - जल्द आवेदन करें",
+    infoOutdated: "जानकारी पुरानी हो सकती है",
     whoCanApply: "कौन आवेदन कर सकता है?",
     occupation: "व्यवसाय:",
     ageRequirement: "आयु आवश्यकता:",
@@ -141,7 +153,8 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
+<div className="grid md:grid-cols-3 gap-6 mb-8">
+        {/* Benefit Card */}
         <div className="bg-gradient-to-br from-saffron to-saffron/80 rounded-2xl p-6 text-white shadow-lg shadow-saffron/20">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
@@ -154,16 +167,53 @@ export default function SchemeDetailClient({ scheme }: SchemeDetailClientProps) 
           <p className="text-2xl font-bold">{benefit}</p>
         </div>
 
-        <div className="bg-gradient-to-br from-india-green to-india-green/80 rounded-2xl p-6 text-white shadow-lg shadow-india-green/20">
+        {/* Scheme Status Card */}
+        <div className={`rounded-2xl p-6 text-white shadow-lg ${
+          scheme.status === 'active' ? 'bg-gradient-to-br from-india-green to-india-green/80 shadow-india-green/20' :
+          scheme.status === 'expiring_soon' ? 'bg-gradient-to-br from-amber-500 to-amber-600 shadow-amber-500/20' :
+          scheme.status === 'closed' ? 'bg-gradient-to-br from-gray-500 to-gray-600 shadow-gray-500/20' :
+          'bg-gradient-to-br from-red-500 to-red-600 shadow-red-500/20'
+        }`}>
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+              {scheme.status === 'active' ? (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              ) : scheme.status === 'expiring_soon' ? (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
+            </div>
+            <h2 className="text-lg font-semibold opacity-90">{t.schemeStatus}</h2>
+          </div>
+          <p className="text-lg font-bold">
+            {scheme.status === 'active' ? t.active :
+             scheme.status === 'expiring_soon' ? t.expiringSoon :
+             scheme.status === 'closed' ? t.closed :
+             t.infoOutdated}
+          </p>
+        </div>
+
+        {/* When to Apply Card */}
+        <div className="bg-gradient-to-br from-navy to-navy/80 rounded-2xl p-6 text-white shadow-lg shadow-navy/20">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
-            <h2 className="text-lg font-semibold opacity-90">{t.applicationStatus}</h2>
+            <h2 className="text-lg font-semibold opacity-90">{t.applicationPeriod}</h2>
           </div>
-          <p className="text-2xl font-bold">{scheme.deadline}</p>
+          <p className="text-lg font-bold">{scheme.deadline}</p>
+          {scheme.portal_last_updated && (
+            <p className="text-sm opacity-75 mt-2">{t.lastUpdated}: {scheme.portal_last_updated}</p>
+          )}
         </div>
       </div>
 
