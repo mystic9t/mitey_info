@@ -62,6 +62,7 @@ mitey_info/
 ## Core Data Models
 
 ### Scheme
+
 ```typescript
 interface Scheme {
   id: string;
@@ -108,6 +109,7 @@ interface Scheme {
 ```
 
 ### EligibilityMatch
+
 ```typescript
 interface EligibilityMatch {
   scheme: Scheme;
@@ -140,7 +142,7 @@ A successful overnight cycle means:
 
 - **Build passes**: `npm run build` completes without errors
 - **No console errors**: Application loads without JavaScript errors
-- **Core flows work**: 
+- **Core flows work**:
   - Homepage loads with scheme counts
   - Eligibility checker returns results
   - Scheme detail pages render
