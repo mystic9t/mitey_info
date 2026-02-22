@@ -40,3 +40,6 @@ next-env.d.ts
 
 # Raw assets (downloaded, not for production)
 assets_raw/
+
+# opencode-autopilot
+HEARTBEAT/
