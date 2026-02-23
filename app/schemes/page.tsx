@@ -70,6 +70,14 @@ const states = [
   { value: "All India", labelEn: "All India (Central)", labelHi: "ऑल इंडिया (केंद्रीय)" },
   { value: "Delhi", labelEn: "Delhi", labelHi: "दिल्ली" },
   { value: "Uttar Pradesh", labelEn: "Uttar Pradesh", labelHi: "उत्तर प्रदेश" },
+  { value: "Maharashtra", labelEn: "Maharashtra", labelHi: "महाराष्ट्र" },
+  { value: "West Bengal", labelEn: "West Bengal", labelHi: "पश्चिम बंगाल" },
+  { value: "Karnataka", labelEn: "Karnataka", labelHi: "कर्नाटक" },
+  { value: "Tamil Nadu", labelEn: "Tamil Nadu", labelHi: "तमिल नाडु" },
+  { value: "Gujarat", labelEn: "Gujarat", labelHi: "गुजरात" },
+  { value: "Rajasthan", labelEn: "Rajasthan", labelHi: "राजस्थान" },
+  { value: "Madhya Pradesh", labelEn: "Madhya Pradesh", labelHi: "मध्य प्रदेश" },
+  { value: "Bihar", labelEn: "Bihar", labelHi: "बिहार" },
 ];
 
 function SchemesContent() {
