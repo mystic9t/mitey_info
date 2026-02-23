@@ -44,3 +44,7 @@ assets_raw/
 
 # opencode-autopilot
 HEARTBEAT/
+
+# Project notes (not for version control)
+BLUEPRINT.md
+NEXT.md
